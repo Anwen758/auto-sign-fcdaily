@@ -1,0 +1,63 @@
+#登陆相关配置
+login:
+  #开放的模拟登陆api服务器地址
+  api: "http://www.zimo.wiki:8080/wisedu-unified-login-api-v1.0/api/login"
+
+#用户组配置
+users:
+  #单个用户配置
+  - user:
+      #username 学号或者工号#------------------------------------------
+      username: 'xxxxxxxxx'
+      #password 密码
+      password: 'xxxxxxxxxxxx'
+      #address 地址，定位信息  中国河南省xx市xx区xx路
+      address: 中国江苏省南京市江宁区
+      #email 接受通知消息的邮箱
+      email: xxxxxx@xxxxx.com
+      epassword: 'xxxxxxx'
+      host: smtp.qq.com
+      #school 学校全称
+      school: 南京工程学院
+      #lon 经度
+      lon: 'xxxxxx'
+      #lat 纬度
+      lat: 'xxxxxxx'
+      #abnormalReason 反馈信息----------------------------------------
+      abnormalReason: 在家
+      #      
+      signPhotoUrl: 
+      qrUuid: 
+  #多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
+#今日校园相关配置
+cpdaily:
+  #是否检查问题,true检查，false不检查
+  check: false
+  #附加信息组默认选项配置，没有可留空
+  defaults:
+  #附加信息组默认选项配置，按顺序，可留空
+     - default:
+         #表单项标题
+         title: 你的体温情况（必填）
+         #表单项默认值
+         value: 37.2℃及以下
+     - default:
+         #表单项标题
+         title: 你的健康状况（必填）
+         #表单项默认值
+         value: 健康
+     - default:
+         #表单项标题
+         title: 近14天你或你的同住人是否有疫情中、高风险区域行程史 （必填）
+         #表单项默认值
+         value: 否   
+     - default:
+         #表单项标题
+         title: 你或你的同住人目前是否被医学隔离（必填）
+         #表单项默认值
+         value: 否
+     - default:
+         #表单项标题
+         title: 你的当地健康码颜色是（请谨慎 如实填写）
+         #表单项默认值
+         value: 绿色
