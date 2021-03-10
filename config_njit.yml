@@ -2,33 +2,45 @@
 login:
   #开放的模拟登陆api服务器地址
   api: "http://www.zimo.wiki:8080/wisedu-unified-login-api-v1.0/api/login"
-
 #用户组配置
 users:
   #单个用户配置
   - user:
-      #username 学号或者工号#------------------------------------------
-      username: 'xxxxxxxxx'
-      #password 密码
-      password: 'xxxxxxxxxxxx'
-      #address 地址，定位信息  中国河南省xx市xx区xx路
-      address: 中国江苏省南京市江宁区
-      #email 接受通知消息的邮箱
-      email: xxxxxx@xxxxx.com
-      epassword: 'xxxxxxx'
-      host: smtp.qq.com
-      #school 学校全称
+      #username 学号或者工号 #password 密码-------------------------------------------------------
+      username: 'XXXXXXXXX'
+      password: 'XXXXXXXXX'
+      #email 发送和接受通知消息的邮箱 epassword参考教程
+      email: xxxxxx@qq.com
+      epassword: 'xxxxxxxx'
+      #--------------------------------------------------------------------------------------------
+      hostmail: smtp.qq.com
       school: 南京工程学院
-      #lon 经度
-      lon: 'xxxxxx'
-      #lat 纬度
-      lat: 'xxxxxxx'
-      #abnormalReason 反馈信息----------------------------------------
+      address: 江苏省南京市江宁区映霞路
+      lon: '118.88729418288497'
+      lat: '31.934772219705941'
       abnormalReason: 在家
-      #      
       signPhotoUrl: 
       qrUuid: 
+      login-url: 'http://authserver.njit.edu.cn/authserver/login?service=https%3A%2F%2Fnjit.campusphere.net%2Fportal%2Flogin'
+      host: 'njit.campusphere.net'
   #多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
+#   - user:
+#       #username 学号或者工号 #password 密码-------------------------------------------------------
+#       username: 'XXXXXXXXX'
+#       password: 'XXXXXXXXX'
+#       #email 发送和接受通知消息的邮箱 epassword参考教程
+#       email: xxxxxx@qq.com
+#       epassword: 'xxxxxxxx'
+#       #--------------------------------------------------------------------------------------------
+#       hostmail: smtp.qq.com
+#       school: 南京工程学院
+#       address: 江苏省南京市江宁区映霞路
+#       lon: '118.88729418288497'
+#       lat: '31.934772219705941'
+#       abnormalReason: 在家
+#       signPhotoUrl: 
+#       qrUuid: 
+#       login-url: 'http://authserver.njit.edu.cn/authserver/login?service=https%3A%2F%2Fnjit.campusphere.net%2Fportal%2Flogin'
 #今日校园相关配置
 cpdaily:
   #是否检查问题,true检查，false不检查
