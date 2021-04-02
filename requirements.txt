@@ -1,6 +1,0 @@
-urllib3==1.26.2
-oss2==2.12.1
-requests==2.25.1
-yagmail==0.14.245
-pyDes==2.0.1
-PyYAML==5.4.1
